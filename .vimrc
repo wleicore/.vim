@@ -76,7 +76,7 @@ nnoremap <silent><F3> :NERDTreeToggle<CR>
 nnoremap <silent><F2> :TagbarToggle<CR>
 let g:tagbar_sort=0
 " tag for golang
-source ./gotag.vim
+source ~/.vim/gotag.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope
