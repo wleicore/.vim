@@ -112,3 +112,9 @@ if has("autocmd")
     autocmd Filetype java setlocal omnifunc=javacomplete#Complete
     autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
 endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CsLoader
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:csloader_init_load=1
