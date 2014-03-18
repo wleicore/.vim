@@ -27,6 +27,7 @@ set termencoding=utf-8
 set encoding=utf-8
 
 set hlsearch
+nnoremap <silent><F7> :set hlsearch!<CR>
 
 " tab
 set tabstop=4
