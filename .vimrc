@@ -62,6 +62,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/javacomplete'
 Bundle 'wleicore/CsLoader'
+Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on     " required!
 
