@@ -77,6 +77,7 @@ nnoremap <silent><F3> :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent><F2> :TagbarToggle<CR>
 let g:tagbar_sort=0
+let g:tagbar_left = 1
 " tag for golang
 source ~/.vim/gotag.vim
 
@@ -92,6 +93,8 @@ nnoremap <C-c><C-e> :cs find e <C-R>=expand("<cword>")<CR><CR>
 nnoremap <C-c><C-g> :cs find g <C-R>=expand("<cword>")<CR><CR>
 nnoremap <C-c><C-i> :cs find i ^<C-R>=expand("<cword>")<CR><CR>
 nnoremap <C-c><C-d> :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+:set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP
