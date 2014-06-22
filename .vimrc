@@ -1,53 +1,6 @@
-if has("gui_macvim")
-    " MacVim美化
-    set go=aAce
-    colorscheme slate
-    " set showtabline=2
-    " set guifont=Monaco:h12  " 设置默认字体为monaco
-    set guifont=Droid\ Sans\ Mono:h12  " 设置默认字体为monaco
-endif
-if has("gui_running")
-    set guioptions-=m " 隐藏菜单栏
-    set guioptions-=T " 隐藏工具栏
-    set guioptions-=L " 隐藏左侧滚动条
-    set guioptions-=r " 隐藏右侧滚动条
-    set guioptions-=b " 隐藏底部滚动条
-    set showtabline=0 " 隐藏Tab栏
-    set lines=46 columns=140 " 设置启动大小
-endif
-
-set list
-nnoremap <silent><F8> :set list!<CR>
-" set listchars=tab:>-,eol:$
-set listchars=tab:\|\ ,nbsp:%,trail:-
-
-" 解决中文乱码的问题
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
-set termencoding=utf-8
-set encoding=utf-8
-
-set hlsearch
-nnoremap <silent><F7> :set hlsearch!<CR>
-
-" tab
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set softtabstop=4
-set smarttab
-
-nnoremap <silent><F9> :set nu!<CR>
-
-" C-c和C-v的粘贴复制
-vnoremap <C-c> "+y
-inoremap <C-v> <ESC>"+pa
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle for plugin manager
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible              " be iMproved
-filetype off                  " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -123,3 +76,57 @@ endif
 " CsLoader
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:csloader_auto_load_when_start=1
+
+
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 美化
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("gui_macvim")
+    " MacVim美化
+    set go=aAce
+    colorscheme slate
+    " set showtabline=2
+    " set guifont=Monaco:h12  " 设置默认字体为monaco
+    set guifont=Droid\ Sans\ Mono:h12  " 设置默认字体为monaco
+endif
+if has("gui_running")
+    set guioptions-=m " 隐藏菜单栏
+    set guioptions-=T " 隐藏工具栏
+    set guioptions-=L " 隐藏左侧滚动条
+    set guioptions-=r " 隐藏右侧滚动条
+    set guioptions-=b " 隐藏底部滚动条
+    set showtabline=0 " 隐藏Tab栏
+    set lines=46 columns=140 " 设置启动大小
+endif
+
+set list
+nnoremap <silent><F8> :set list!<CR>
+" set listchars=tab:>-,eol:$
+set listchars=tab:\|\ ,nbsp:%,trail:-
+
+" 解决中文乱码的问题
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+
+set hlsearch
+nnoremap <silent><F7> :set hlsearch!<CR>
+
+" tab
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+set smarttab
+
+nnoremap <silent><F9> :set nu!<CR>
+
+" C-c和C-v的粘贴复制
+vnoremap <C-c> "+y
+inoremap <C-v> <ESC>"+pa
+
+syntax enable
+syntax on
