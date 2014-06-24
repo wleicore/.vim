@@ -130,3 +130,6 @@ inoremap <C-v> <ESC>"+pa
 
 syntax enable
 syntax on
+
+" 启用鼠标功能
+set mouse=a
