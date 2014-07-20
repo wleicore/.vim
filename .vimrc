@@ -16,6 +16,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/javacomplete'
 Bundle 'wleicore/CsLoader'
 Bundle 'mileszs/ack.vim'
+Bundle 'dgryski/vim-godef'
+Bundle 'Blackrush/vim-gocode'
 
 filetype plugin indent on     " required!
 
@@ -78,6 +80,10 @@ endif
 let g:csloader_auto_load_when_start=1
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Golang
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufWritePre *.go :Fmt
 
 
 
