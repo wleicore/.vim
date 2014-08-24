@@ -93,7 +93,8 @@ autocmd BufWritePre *.go :Fmt
 if has("gui_macvim")
     " MacVim美化
     set go=aAce
-    colorscheme slate
+    " colorscheme slate
+    colorscheme delek
     " set showtabline=2
     " set guifont=Monaco:h12  " 设置默认字体为monaco
     set guifont=Droid\ Sans\ Mono:h12  " 设置默认字体为monaco
