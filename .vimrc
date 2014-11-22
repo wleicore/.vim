@@ -115,9 +115,13 @@ nnoremap <silent><F8> :set list!<CR>
 set listchars=tab:\|\ ,nbsp:%,trail:-
 
 " 解决中文乱码的问题
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
-set termencoding=utf-8
+" set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+" set termencoding=utf-8
+set termencoding=gbk
 set encoding=utf-8
+set gfn=Monaco:h10:cANSI
+set gfw=NSimsun:h12
 
 set hlsearch
 nnoremap <silent><F7> :set hlsearch!<CR>
